@@ -1,0 +1,18 @@
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/create";
+@import "./blocks/login";
+@import "./blocks/column";
+@import "./blocks/comments";
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-family: 'Poppins', sans-serif;  }
+  body {
+    background-image: url("../images/bg3.jpg");
+  }

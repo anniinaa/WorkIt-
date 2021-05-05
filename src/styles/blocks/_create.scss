@@ -1,0 +1,80 @@
+.note-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:400px ;
+    margin: auto;
+    padding: 5px 10px 15px;
+    border-radius: 5px;
+    #standard-basic{
+        font-size: 20px;
+        text-align: center;
+    }
+    .avatar{
+        text-align: center;
+        padding: 10px;
+        #avatar{
+            margin: auto;
+        }
+    }
+    .text-area{
+        padding: 5px;
+        margin-top: 10px;
+        background-color: transparent;
+        font-size: 15px;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;  
+    }
+    .text-author{
+        padding: 3px;
+        margin-top: 5px;
+        background-color: transparent;
+        font-size: 10px;
+        border-radius: 3px;
+        border: solid 1px gray;
+        font-family: 'Poppins', sans-serif;  
+    }
+    #button{
+        width: 80px;
+        margin: 15px auto 0 ;
+        font-size: 12px;
+        padding: 3px;
+        background-color: rgba(231, 73, 152, 0.537);
+        color: rgb(91, 16, 110);
+    }
+}
+.posted{
+    display: flex;
+    width: auto;
+    background-color: rgb(246, 232, 248);
+    margin: 5px;
+
+    section{
+        margin: auto;
+        padding: 5px;
+        h6{
+            font-size: 15px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        .deleteBtn{
+            color: rgb(57, 54, 54);
+            
+        }
+        button{
+            margin: 0 0 0 20px;
+            cursor: pointer;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            padding: 3px;
+        }
+    }
+
+}
