@@ -18,7 +18,9 @@ function App() {
   } else {
     return (
       <div>
+        <div className="container">
         <Main />
+        </div>
       </div>
     );
   }

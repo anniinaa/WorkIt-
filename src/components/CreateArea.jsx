@@ -9,6 +9,7 @@ function CreateArea(props) {
   const [subject, setSubject] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
+  const [inprogress, setInprogress] = useState(true)
 
 
   const addNote = (e) => {
@@ -19,6 +20,7 @@ function CreateArea(props) {
       Content: content,
       avatar: user.photoURL,
       Subject: subject,
+      inprogress: inprogress,
       Time: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
@@ -37,6 +39,7 @@ function CreateArea(props) {
         </div>
           <TextField
             value={subject}
+            required
             onChange={(e) => setSubject(e.target.value)}
             id="standard-basic"
             className="text-subject"
@@ -44,6 +47,7 @@ function CreateArea(props) {
           />
           <textarea
             className="text-area"
+            required
             placeholder="Content..."
             value={content}
             onChange={(e) => setContent(e.target.value)}

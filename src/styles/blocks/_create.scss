@@ -43,38 +43,71 @@
         color: rgb(91, 16, 110);
     }
 }
+
+//single note
+
 .posted{
     display: flex;
-    width: auto;
-    background-color: rgb(246, 232, 248);
+    flex-direction: row;
+    height: 240px;
+    border-radius: 5px;
     margin: 5px;
+    padding-bottom: 8px;
+    &:hover {
+        box-shadow: rgba(49, 49, 54, 0.659) 0px 7px 15px 0px;
+      }
 
-    section{
-        margin: auto;
-        padding: 5px;
+    .note-content{
+        width: 320px;
+        margin: 7px 0px 5px 21px;
+        text-align: center;
         h6{
             font-size: 15px;
+            background-color: rgba(255, 255, 255, 0.238);
+            margin-bottom: 5px;
+            padding: 4px 0;
+            text-transform: uppercase;
+            font-family: 'Nunito Sans', sans-serif;        }
+        .note-details{
+            font-size: 12px;
+            height: 120px;
+            overflow-y: scroll;
+            text-align: center;
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.238);
+            border-radius: 2px;
         }
-        p{
-            font-size: 11px;
-        }
+            small{
+                font-size: 12px;
+                color: rgb(90, 96, 95);
+            }
+        
+
     }
-    .buttons{
+    .note-avatar{
         display: flex;
         flex-direction: row;
-        margin: auto;
-        .deleteBtn{
-            color: rgb(57, 54, 54);
-            
-        }
-        button{
-            margin: 0 0 0 20px;
-            cursor: pointer;
-            font-size: 15px;
-            background: transparent;
-            border: none;
-            padding: 3px;
+        justify-content: center;
+        margin-bottom: 5px;
+        #avatar{
+           width: 12%;
+           height: 12%;
         }
     }
 
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2px;
+        .deleteBtn{
+            margin-top: 3px;   
+        }
+        button{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+
+    }
 }

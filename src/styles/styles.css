@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap);
 header {
   background-color: rgba(217, 154, 240, 0.387);
-  margin: auto -16px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 header #openButton {
   background-color: transparent;
   border: none;
-  margin-top: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 25px;
+  margin-left: -50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -28,6 +31,7 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -53,9 +57,6 @@ header .OpenMenu Button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 footer {
@@ -66,7 +67,11 @@ footer {
 
 footer p {
   color: rgba(83, 74, 74, 0.517);
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.login-footer {
+  margin-top: 150px;
 }
 
 .note-container {
@@ -132,25 +137,53 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  background-color: #f6e8f8;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 240px;
+  border-radius: 5px;
   margin: 5px;
+  padding-bottom: 8px;
 }
 
-.posted section {
-  margin: auto;
-  padding: 5px;
+.posted:hover {
+  -webkit-box-shadow: rgba(49, 49, 54, 0.659) 0px 7px 15px 0px;
+          box-shadow: rgba(49, 49, 54, 0.659) 0px 7px 15px 0px;
 }
 
-.posted section h6 {
+.posted .note-content {
+  width: 320px;
+  margin: 7px 0px 5px 21px;
+  text-align: center;
+}
+
+.posted .note-content h6 {
   font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.238);
+  margin-bottom: 5px;
+  padding: 4px 0;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.posted section p {
-  font-size: 11px;
+.posted .note-content .note-details {
+  font-size: 12px;
+  height: 120px;
+  overflow-y: scroll;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.238);
+  border-radius: 2px;
 }
 
-.posted .buttons {
+.posted .note-content small {
+  font-size: 12px;
+  color: #5a605f;
+}
+
+.posted .note-avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,40 +191,109 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+
+.posted .note-avatar #avatar {
+  width: 12%;
+  height: 12%;
+}
+
+.posted .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 2px;
 }
 
 .posted .buttons .deleteBtn {
-  color: #393636;
+  margin-top: 3px;
 }
 
 .posted .buttons button {
-  margin: 0 0 0 20px;
   cursor: pointer;
-  font-size: 15px;
-  background: transparent;
   border: none;
-  padding: 3px;
+  background-color: transparent;
 }
 
 .mainlogo {
   display: block;
-  width: 400px;
-  padding-top: 100px;
+  width: 300px;
+  padding-top: 40px;
+}
+
+#nappula {
+  margin-top: 35px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-color: #6f55cc;
+  width: 300px;
+  border-radius: 10px;
+  letter-spacing: 3px;
+}
+
+#nappula:hover {
+  background-color: #d7acf2;
+}
+
+.slogan-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slogan-row p {
+  font-size: 15px;
+  color: #3e3a3a;
+  margin: -10px;
+}
+
+.slogan-row .slogan {
+  width: 50%;
+  margin: auto;
 }
 
 .column-container {
-  margin: 30px 30px 0 0;
-  width: 75%;
-  height: 550px;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container .column1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 370px 370px;
+      grid-template-columns: 370px 370px;
+  margin: 40px 10px;
   overflow-y: scroll;
 }
 
-.column-container .column1 > * {
+.column-container .column2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 370px;
+      grid-template-columns: 370px;
+  margin: 40px 10px;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -223,14 +325,9 @@ footer p {
 }
 
 .comment-field .scroll {
-  height: 520px;
+  height: 560px;
   overflow: scroll;
   overflow-x: hidden;
-}
-
-.full-chat {
-  width: 330px;
-  margin-top: 30px;
 }
 
 .full-chat h4 {
@@ -241,10 +338,12 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-weight: 100;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: rgba(114, 72, 130, 0.387);
-  border-radius: 3px 3px 0 0;
+  padding: 5px 0;
 }
 
 .single-comment {
@@ -261,7 +360,7 @@ footer p {
   background-color: white;
   border: solid lightblue 0.5px;
   border-radius: 2px;
-  margin: 4px 3px;
+  margin: 4px 7px;
 }
 
 .single-comment .chat-delete button {
@@ -272,7 +371,7 @@ footer p {
 }
 
 .single-comment .chat-content {
-  padding: 2px;
+  padding: 2px 5px;
 }
 
 .single-comment .chat-content h6 {
@@ -298,6 +397,7 @@ footer p {
 
 html {
   font-family: 'Poppins', sans-serif;
+  width: auto;
 }
 
 body {

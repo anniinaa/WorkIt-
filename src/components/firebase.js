@@ -21,9 +21,11 @@ const firebaseConfig = {
   export const logOut = () => {
     auth.signOut().then(()=> {
       console.log('logged out')
-      window.location.href="/Login";
+      window.location.href="index.html";
 
     }).catch((error) => {
       console.log(error.message)
     })
   }
+
+ 

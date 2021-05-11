@@ -32,7 +32,7 @@ export default function SimplePopover() {
   return (
     <div>
       <Button id="openButton" itemID="popover" aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
-      ADD<img className="logoButton" src={logo} alt=""/>
+      ADD NOTE
       </Button>
       <Popover
         id={id}

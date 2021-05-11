@@ -18,24 +18,23 @@
 
     }
     .scroll{
-        height: 520px;
+        height: 560px;
         overflow: scroll;
         overflow-x: hidden;
     }
     
 }
 .full-chat{
-    width: 330px;
-    margin-top: 30px;
-
     h4{
         display: flex;
         justify-content: center;
         text-align: center;
-        font-weight: 100;
         color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Nunito Sans', sans-serif;        
         background-color: rgba(114, 72, 130, 0.387);
-        border-radius: 3px 3px 0 0;
+        padding: 5px 0;
     }
 
 }
@@ -47,7 +46,7 @@
     background-color: white;
     border: solid lightblue 0.5px;
     border-radius: 2px;
-    margin: 4px 3px;
+    margin: 4px 7px;
 
     .chat-delete{
         button{
@@ -59,7 +58,7 @@
 
     }
     .chat-content{
-        padding: 2px;
+        padding: 2px 5px;
         h6{
             font-size: 11px;
             color: rgb(189, 163, 191);

@@ -1,14 +1,20 @@
-.column-container{
-    margin: 30px 30px 0 0 ;
-    width: 75%;
-    height: 550px;
-    overflow-y: scroll ;   
-    .column1 > *{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
+.column-container {
+  height: 580px;
+  display: flex;
 
+  .column1 {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    margin: 40px 10px;
+    overflow-y: scroll;
+  }
+  .column2 {
+    display: grid;
+    grid-template-columns: 370px;
+    margin: 40px 10px;
+    overflow-y: scroll;
+  }
 }
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }

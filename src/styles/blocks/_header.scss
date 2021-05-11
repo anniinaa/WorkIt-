@@ -1,40 +1,39 @@
 header {
-    background-color: rgba(217, 154, 240, 0.387);
-    margin: auto -16px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(217, 154, 240, 0.387);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
 
-     #openButton{
-        
-            background-color: transparent;
-            border: none;
-            margin-top: 15px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-            font-size: 13px;
-            cursor: pointer;
-        .logoButton{
-            width: 100px;
-        }
-    }
-
-    .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        img{
-            max-width: 200px;
-        }
-    }
-    .OpenMenu{
-        padding: 20px 40px;
-        Button{
-            color: white;
-
-        }
+  #openButton {
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+    margin-left: -50px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    .logoButton {
+      width: 100px;
     }
   }
-.content{
+
+  .logo {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
     justify-content: space-between;
+    img {
+      max-width: 200px;
+    }
+  }
+  .OpenMenu {
+    padding: 20px 40px;
+    Button {
+      color: white;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
 }
